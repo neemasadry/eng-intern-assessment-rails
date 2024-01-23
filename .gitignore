@@ -37,3 +37,6 @@
 # Ignore .history
 /.history/
 /.history/*
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
