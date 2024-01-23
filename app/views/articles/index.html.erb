@@ -9,3 +9,5 @@
 <% @articles.each do |article| %>
   <%= render partial: "articles/article", locals: { article: article } %>
 <% end %>
+
+<%== pagy_nav(@pagy) if @pagy.pages > 1 %>
