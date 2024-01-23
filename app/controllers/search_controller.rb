@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    @results = Article.search(params[:query])
+    @pagy, @results = pagy(Article.search(params[:query]))
   end
 end
